@@ -16,3 +16,4 @@ __pycache__
 build/.jekyll-cache
 build/Gemfile.lock
 app.yaml
+template/

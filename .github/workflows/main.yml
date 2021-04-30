@@ -24,6 +24,19 @@ jobs:
           export FLASK_KEY=${{ secrets.FLASK_KEY }}
           envsubst '${FLASK_KEY}' < template.yaml > app.yaml
 
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+          bundler-cache: true
+          working-directory: ./build
+
+      - name: Build Jekyll site
+        run: |
+          export CID=$(echo "${{ github.event.head_commit.id }}" | cut -c -6)
+          export BUNDLE_GEMFILE="build/Gemfile"
+          bundle install
+          bundle exec jekyll build
+
       - name: Deploy to Google App Engine
         uses: google-github-actions/deploy-appengine@main
         with:

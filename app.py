@@ -16,7 +16,6 @@ app.logger.setLevel(logging.INFO)
 
 @app.route('/')
 def init_app():
-    app.logger.info(app.secret_key)
     return render_template('index.html')
 
 
