@@ -230,7 +230,6 @@ blockquote p:last-child {
 img {
   display: block;
   max-width: 100%;
-  margin: 0 0 1rem;
   border-radius: 5px;
 }
 
@@ -293,6 +292,44 @@ tbody tr:nth-child(odd) th {
   margin-right: auto;
 }
 
+.social-container, .social, .media, .icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-container {
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 48em) {
+  .social-container {
+    width: 65vw;
+    justify-content: left;
+  }
+}
+
+.social {
+  width: 200px;
+}
+
+.media {
+  min-height: 100px;
+  height: 100px;
+  justify-content: center;
+  margin: auto;
+}
+
+.social > a {
+  padding: 10px;
+}
+
+.social > a:hover {
+  text-decoration: none;
+}
 
 /*
  * Masthead
