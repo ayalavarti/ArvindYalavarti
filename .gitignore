@@ -15,3 +15,4 @@ __pycache__
 # Jekyll files
 build/.jekyll-cache
 build/Gemfile.lock
+app.yaml

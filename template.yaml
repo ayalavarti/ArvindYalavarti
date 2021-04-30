@@ -11,4 +11,4 @@ handlers:
   static_dir: public
 
 env_variables:
-  FLASK_KEY: 'key'
+  FLASK_KEY: $FLASK_KEY

@@ -19,6 +19,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Substitute env
+        run: |
+          export FLASK_KEY=${{ secrets.FLASK_KEY }}
+          envsubst '${FLASK_KEY}' < template.yaml > app.yaml
+
       - name: Deploy to Google App Engine
         uses: google-github-actions/deploy-appengine@main
         with:
