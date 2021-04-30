@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+*/__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+env/
+
+.idea/
+.vscode/
+__pycache__
+
+.DS_Store
+
+# Jekyll files
+static/.jekyll-cache
+static/Gemfile.lock

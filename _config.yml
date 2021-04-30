@@ -1,0 +1,12 @@
+source              : ./static
+destination         : ./templates
+
+# Setup
+title:            ayalava2
+tagline:          ''
+description:      ''
+url:              arvindyalavarti.com
+baseurl:          /
+
+plugins:
+  - jekyll-environment-variables
