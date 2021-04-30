@@ -1,5 +1,5 @@
-source              : ./static
-destination         : ./templates
+source              : ./build
+destination         : ./template
 
 # Setup
 title:            ayalava2

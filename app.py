@@ -5,8 +5,8 @@ from flask import Flask, render_template, request, jsonify
 from google.cloud import datastore
 
 
-template_dir = os.path.abspath('./templates')
-static_dir = os.path.abspath('./public')
+template_dir = os.path.abspath('./template')
+static_dir = os.path.abspath('./static')
 
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
 app.secret_key = os.environ["FLASK_KEY"]

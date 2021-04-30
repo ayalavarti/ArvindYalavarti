@@ -13,5 +13,5 @@ __pycache__
 .DS_Store
 
 # Jekyll files
-static/.jekyll-cache
-static/Gemfile.lock
+build/.jekyll-cache
+build/Gemfile.lock
