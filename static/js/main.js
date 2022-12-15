@@ -10,10 +10,9 @@ let infoTooltips;
 function initTooltips() {
     infoTooltips = tippy(".info", {
         animation: "scale",
-        theme: "ay2",
-        maxWidth: 280,
-        arrow: true,
-        arrowType: "round",
+        theme: "ay",
+        maxWidth: 400,
+        arrow: false,
         inertia: true,
         sticky: true,
         placement: "top",

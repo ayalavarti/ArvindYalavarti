@@ -29,6 +29,9 @@ html {
   }
 }
 
+i {
+  font-size: 30px;
+}
 
 /*
  * Sidebar
@@ -49,7 +52,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 28rem;
     display: flex;
     align-items: center;
   }
@@ -63,7 +66,6 @@ html {
 /* About section */
 .sidebar-about h1 {
   color: #fff;
-  margin-top: 0;
   font-family: "PT Sans", serif;
   font-size: 3.25rem;
 }
@@ -125,7 +127,7 @@ a.sidebar-nav-item:focus {
   .content {
     position: fixed;
     max-width: 38rem;
-    margin-left: 18rem;
+    margin-left: 28rem;
     margin-right: 2rem;
   }
 }
@@ -171,7 +173,52 @@ a.sidebar-nav-item:focus {
 
 .tippy-box[data-theme~='ay'] {
   color: #e7effd;
-  font-size: 14px;
+  background-color: #5994c5;
+  font-size: 24px;
   font-weight: 400;
+  padding: 6px;
   box-shadow: 0 2px 4px 0 rgba(99, 100, 100, 0.397);
+}
+
+.tippy-tooltip.ay-theme[data-animatefill] {
+    background-color: transparent;
+}
+
+.tippy-tooltip.ay-theme .tippy-backdrop {
+    background-color: #fff;
+}
+
+.tippy-tooltip.ay-theme .tippy-roundarrow {
+    fill: #fff;
+}
+
+.line-1{
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 1.5s steps(44) 1s 1 normal both,
+             blinkTextCursor 1000ms steps(44) infinite normal;
+}
+
+@keyframes typewriter{
+  from {width: 0;}
+  to {width: 10rem;}
+}
+
+@keyframes blinkTextCursor{
+  from {border-right-color: rgba(255,255,255,.75);}
+  to {border-right-color: transparent;}
+}
+
+.social {
+  margin-bottom: 30px;
 }
