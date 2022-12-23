@@ -28,12 +28,4 @@ title: Home
              <img src="static/images/brown.png" width="100px" />
         </div>
     </div>
-    <div class="social">
-        <div class="icons">
-            <i class="fa-solid fa-briefcase"></i>
-        </div>
-        <div class="media">
-             <img src="static/images/palantir-2.png" width="100px"/>
-        </div>
-    </div>
 </div>
